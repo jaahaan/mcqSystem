@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.datetime {
+    color: #4e4e4e;
+    font-family: 'Segoe UI', sans-serif;
+    width: 340px;
+    padding: 15px 10px;
+    margin: 30px;
+    border: 2px solid #6a6e46;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+}
+
+.datetime h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.datetime h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 3px;
+}
+
+.content-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    padding: 40px 30px;
+    margin: 10px 5px;
+    text-align: center;
+    color: #4e4e4e;
+
+}
+
+
+.content h1 {
+    font-size: 50px;
+}
+
+.content p {
+    color: #6a6e46;
+    font-size: 30px;
+}
+
+.content:nth-child(1) {
+    flex: 20%;
+    box-shadow: 0 0 8px rgba(250, 250, 250, 0.6);
+    border-radius: 5px;
+    padding: 40px 30px;
+}
+
+.content:nth-child(2) {
+    flex: 20%;
+    border-radius: 5px;
+    color: #fff;
+    background: #6a6e46;
+    box-shadow: 0 0 8px rgba(250, 250, 250, 0.6);
+    margin: auto;
+    font-family: cursive;
+
+}
+
+.content:nth-child(2):hover {
+    background-color: #5d613a;
+    cursor: pointer;
+}
+
+.content hr {
+    width: 90%;
+    height: 1px;
+    background: #6a6e46;
+    margin: auto;
+    border: none;
+}
+
+.content:hover hr {
+    background-color: #fff;
+}
+
+.content .btn a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+
+    display: inline-block;
+}
+
+.content .btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+    background: none;
+}
+
+.content .btn:hover {
+    background-color: #4e4e4e;
+}
+
+@media (max-width: 700px) {
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        color: #6a6e46;
+        font-size: 20px;
+    }
+}

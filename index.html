@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="headerFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>MCQ System</title>
+</head>
+
+<body>
+    <section class="header">
+
+        <nav>
+            <a href="index.html">
+                <h1 id="mcq">MCQ System</h1>
+            </a>
+            <i class="fa fa-bars" onclick="showMenu()" id="show"></i>
+            <i class="fa fa-bars" onclick="hideMenu()" id="hide"></i>
+            <div class="nav-lists" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registration</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <img height="100%" width="100%" name="slide"
+                src="https://source.unsplash.com/2400x700/?education, stationary" />
+        </div>
+
+
+        <div class="container">
+            <div class="datetime">
+                <h2 id="date">Day, Month Date, Year</h2>
+                <h1 id="clock">00 : 00 : 00</h1>
+            </div>
+
+            <div class="content-container">
+                <div class="content">
+                    <h1>Knowledge is a Treasure</h1>
+                    <p>But practice is the key to it.</p>
+                </div>
+                <div class="content">
+                    <h1>Let's Take A Quiz</h1>
+                    <hr>
+                    <button class="btn"><a href="rules.html">Start</a></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bottom-container">
+        <ul>
+            <li><a href="https://www.facebook.com/jaaahaaan"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/-jaahaan-/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://github.com/jaahaan"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <p>Copyright &copy; Nargish Jahan <span id="year"></span></p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
