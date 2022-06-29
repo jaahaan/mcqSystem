@@ -41,18 +41,19 @@
 
     <!-- category container -->
 
-    <div class="jumbotron jumbotron-fluid" id="welcome">
-        <div class="container ">
+    <div class="card alert alert-success col-md-10 col-lg-8 my-3 m-auto" id="welcome">
+        <div class="card-header">
             <h1 class="display-4">Welcome To Quiz World</h1>
+        </div>
+        <div class="card-body">
             <p class="lead">
                 <label for="name" id="name">Name</label>
                 <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
             </p>
             <hr class="my-4">
             <p>
-            <ul>
-                <p class="display-6 mt-2">Rules</p>
-
+            <h2 class="display-6 mt-2">Rules</h2>
+            <ul id="rules">
                 <li>All questions are multiple choice questions.</li>
                 <li>Only one choice is correct.</li>
                 <li>Duration: 10 mins.</li>
@@ -65,62 +66,62 @@
                 <li>You will be told your marks immediately when you submit the answer.</li>
             </ul>
             <p class="lead">
-                <button class="btn btn-success btn-lg" role="button" id="start">Start Quiz</button>
+                <button class="btn btn-outline-success btn-lg d-block col-12" role="button" id="start">Start
+                    Quiz</button>
             </p>
         </div>
     </div>
+    </div>
 
-    <div class="container my-3 text-center">
-        <div class="jumbotron">
-            <div id="clock">
-                <span id="hour">00 :</span>
-                <span id="min">00 :</span>
-                <span id="sec">00</span><br>
-            </div>
+
+    <div id="clock" class="alert alert-danger m-auto my-2">
+        <div class="container text-center">
+            <span id="hour">00 :</span>
+            <span id="min">00 :</span>
+            <span id="sec">00</span><br>
+
         </div>
     </div>
 
-    <div class="question-box" id="box">
-        <ol>
-            <li>What is Java?</li>
-            <input type="radio" name="q1" value="Markup Language">
-            <label>Markup Language</label><br>
-            <input type="radio" name="q1" value="Object Oriented Language">
-            <label>Class-based Object Oriented Language</label><br>
-            <input type="radio" name="q1" value="prototype based object oriented Language">
-            <label>Prototype based Object Oriented Language</label><br>
+    <div class="question-box alert alert-dark m-auto" id="box">
+        <h2 id="question">What is Java?</h2>
 
-            <li>Which of these is the correct way in which we can call the JavaScript code?</li>
-            <input type="radio" name="q2" value="Triggering Event">
-            <label>Triggering Event</label><br>
-            <input type="radio" name="q2" value="Preprocessor">
-            <label>Preprocessor</label><br>
-            <input type="radio" name="q2" value="Function/Method">
-            <label>Function/Method</label><br>
+        <ul>
+            <li>
+                <input type="radio" name="ans" id="ans1" value="Markup Language" class="answer">
+                <label for="ans1" id="option1">Markup Language</label><br>
+            </li>
+            <li>
+                <input type="radio" name="ans" id="ans2" value="Object Oriented Language" class="answer">
+                <label for="ans2" id="option2">Class-based Object Oriented Language</label><br>
+            </li>
+            <li>
+                <input type="radio" name="ans" id="ans3" value="prototype based object oriented Language"
+                    class="answer">
+                <label for="ans3" id="option3">Prototype based Object Oriented Language</label><br>
+            </li>
+        </ul>
 
-            <li>Which of these is known as the Equality operator used for checking whether both the
-                values are equal?</li>
-            <input type="radio" name="q3" value="=">
-            <label>=</label><br>
-            <input type="radio" name="q3" value="==">
-            <label>==</label><br>
-            <input type="radio" name="q3" value="===">
-            <label>===</label><br>
-        </ol>
-        <button class="btn btn-success btn-lg mt-4" role="button" id="submit">Submit</button>
+        <button class="btn btn-success btn-lg d-inline-block col-5" role="button" id="next">Next</button>
+        <button class="btn btn-danger btn-lg d-inline-block col-5 " role="button" id="submit">End quiz</button>
 
     </div>
 
     <div class="alert alert-success m-5" role="alert" id="success">
         <h4 class="alert-heading">Well Done!</h4>
         <hr>
-        <p id="score">Your Score: </p>
+        <p id="score"></p>
+        <p id="duration"></p>
+        <a class="btn btn-success btn-lg" href="rules.html">Play Again</a>
+
     </div>
 
     <div class="alert alert-danger m-5" role="alert" id="danger">
         <h4 class="alert-heading">Better luck next time!</h4>
         <hr>
-        <p id="score">Your Score: </p>
+        <p id="scored">Your Score: </p>
+        <p id="durationd">Your Duration: </p>
+        <a class="btn btn-danger btn-lg" href="rules.html">Play Again</a>
     </div>
     <script src="timer.js"></script>
 

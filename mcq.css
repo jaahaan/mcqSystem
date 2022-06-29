@@ -5,23 +5,20 @@
 
 #clock {
     padding: 20px 10px;
-    color: #4e4e4e;
-    border: 1px solid #6a6e46;
-    box-shadow: 0 0 2px rgb(57, 70, 0);
-
     border-radius: 5px;
+    width: 80%;
     font-size: 30px;
     display: none;
-    margin: auto;
+
 }
+
 
 #box {
     display: none;
-    width: 70%;
-    margin: auto;
+    width: 80%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
-    padding: 40px 30px;
+    padding: 40px;
 }
 
 #success {
@@ -32,6 +29,7 @@
     display: none;
 }
 
-li {
+ul:not(#rules) {
     margin-top: 15px;
+    list-style: none;
 }
